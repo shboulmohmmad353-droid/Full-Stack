@@ -1,0 +1,37 @@
+﻿@model Usre;
+
+
+
+<h1>Create New Customer</h1>
+
+<form asp-action="Create" asp-controller="Test">
+   
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label">Name</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label">Email</label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Age" class="form-label">Age</label>
+        <input asp-for="Age" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Isactive" class="form-label">IsAction</label>
+        <input asp-for="Isactive" class="form-control" />
+    </div>
+
+
+    <div class="mb-3">
+        <label asp-for="Imagepath" class="form-label">Imagepath</label>
+        <input asp-for="Imagepath" class="form-control" />
+    </div>
+
+
+    <input type="submit" value="Create" class="btn btn-success" />
+</form>
